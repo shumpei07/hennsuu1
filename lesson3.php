@@ -16,4 +16,4 @@ $human = [
 ];
 
 echo $human['name'];
-echo $human['age']['gender'];
+echo $human['age'] .'歳・' .$person['gender'];
