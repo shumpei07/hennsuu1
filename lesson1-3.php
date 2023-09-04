@@ -10,10 +10,11 @@
 // という形で出力してください。
 
 $human = [
-  'name' => 山田,
+  'name' => '山田',
   'age' => 20,
-  'gender' => 女性,
+  'gender' => '女性',
 ];
 
 echo $human['name'];
-echo $human['age'] .'歳・' .$person['gender'];
+
+echo $human['age'] .'歳・' .$human['gender'];
