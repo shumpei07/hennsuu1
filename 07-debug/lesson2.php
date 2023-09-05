@@ -24,7 +24,7 @@ class SelfIntroduction
         string $lastName,
         string $firstName,
         int $age,
-        string $hobby,
+        string $hobby
     ) {
         $this->lastName     = $lastName;
         $this->firstName    = $firstName;
@@ -53,12 +53,12 @@ if (! empty($_POST)) {
     $firstName        = $_POST['first_name'];
     $age              = $_POST['age'];
     $hobby            = $_POST['hobby'];
-    if ($selfIntroduction) {
-        echo '私の名前は'.$selfIntroduction->getFullName().'年齢は'.$selfIntroduction->getAge().'です。';
-        echo '<br>';
+
+    $selfIntroduction = new SelfIntroduction($lastName, $firstName, $age, $hobby);
+        echo '私の名前は'.$selfIntroduction->getFullName().'年齢は'.$selfIntroduction->getAge().'です。<br>';
         echo '趣味は'. $selfIntroduction->getHobby().'です。';
-    }
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="ja">
